@@ -1,0 +1,104 @@
+# ==========================================================
+# Core LangChain Ecosystem
+# ==========================================================
+langchain>=1.3.2,<2.0
+langchain-core>=1.4.0,<2.0
+langchain-text-splitters>=1.1.2,<2.0
+langchain-openai>=1.2.2,<2.0
+langchain-huggingface>=1.2.2,<2.0
+langchain-ollama>=1.1.0,<2.0
+
+# Fixed from vulnerable 0.8.15
+langsmith>=0.8.18,<1.0
+bert_score
+
+# ==========================================================
+# LLM Providers and HTTP Clients
+# ==========================================================
+openai
+httpx
+requests
+python-dotenv
+
+
+# ==========================================================
+# Embeddings and Machine Learning
+# ==========================================================
+sentence-transformers
+
+# Fixed from vulnerable 2.12.0
+torch>=2.13.0,<2.14
+
+transformers
+accelerate
+numpy
+scipy
+scikit-learn
+
+
+# ==========================================================
+# PDF and Document Processing
+# ==========================================================
+
+# Fixed from vulnerable 6.13.2
+pypdf>=6.14.2,<7.0
+
+pymupdf
+python-docx
+odfpy
+html2text
+beautifulsoup4
+pypandoc
+
+# Kept for supported image/document processing.
+# Fixed from vulnerable 12.2.0
+pillow>=12.3.0,<13.0
+
+
+# ==========================================================
+# Data Processing
+# ==========================================================
+pandas
+openpyxl
+
+# Used directly in evaluation and test-data generation.
+# Fixed from vulnerable 3.9.4
+nltk>=3.10.0,<4.0
+
+
+# ==========================================================
+# Explainability
+# ==========================================================
+shap
+lime
+matplotlib
+
+
+# ==========================================================
+# API and Server
+# ==========================================================
+fastapi
+starlette
+uvicorn
+websockets
+python-multipart>=0.0.30,<1.0
+
+
+# ==========================================================
+# Validation and Security
+# ==========================================================
+pydantic>=2.8,<3.0
+
+# Security-fixed transitive dependency
+pydantic-settings>=2.14.2,<3.0
+
+cryptography>=50.0.0,<51.0
+pycryptodome
+
+# Security-fixed transitive dependencies
+pyasn1>=0.6.4,<0.7
+jaraco.context>=6.1.2,<7.0
+
+truepy==2.0.4
+ntplib
+
